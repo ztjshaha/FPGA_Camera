@@ -1,0 +1,135 @@
+'Finished building: ../src/display_demo.c'
+' '
+'Building file: ../src/ov5640.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ov5640.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_prj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ov5640.d" -MT"src/ov5640.o" -o "src/ov5640.o" "../src/ov5640.c"
+'Finished building: ../src/ov5640.c'
+' '
+'Building file: ../src/vdma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/vdma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_prj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/vdma.d" -MT"src/vdma.o" -o "src/vdma.o" "../src/vdma.c"
+'Finished building: ../src/vdma.c'
+' '
+'Building target: test_prj.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../test_prj_bsp/ps7_cortexa9_0/lib -o "test_prj.elf"  ./src/i2c/PS_i2c.o  ./src/dynclk/dynclk.o  ./src/display_ctrl/display_ctrl.o  ./src/display_demo.o ./src/ov5640.o ./src/vdma.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_prj.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size test_prj.elf  |tee "test_prj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+1511236	   3048	3482272	4996556	 4c3dcc	test_prj.elf
+'Finished building: test_prj.elf.size'
+' '
+11:11:15 **** Incremental Build of configuration Debug for project test_prj ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+11:12:54 **** Incremental Build of configuration Debug for project test_prj ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+11:14:34 **** Auto Build of configuration Debug for project test_prj ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/display_demo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/display_demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_prj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/display_demo.d" -MT"src/display_demo.o" -o "src/display_demo.o" "../src/display_demo.c"
+../src/display_demo.c: In function 'main':
+../src/display_demo.c:141:3: warning: implicit declaration of function 'vdma_write_init' [-Wimplicit-function-declaration]
+   vdma_write_init(XPAR_AXIVDMA_1_DEVICE_ID,400 * 3,240,800 * 3,(unsigned int)dispCtrl.framePtr[dispCtrl.curFrame]);
+   ^~~~~~~~~~~~~~~
+'Finished building: ../src/display_demo.c'
+' '
+'Building target: test_prj.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../test_prj_bsp/ps7_cortexa9_0/lib -o "test_prj.elf"  ./src/i2c/PS_i2c.o  ./src/dynclk/dynclk.o  ./src/display_ctrl/display_ctrl.o  ./src/display_demo.o ./src/ov5640.o ./src/vdma.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_prj.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size test_prj.elf  |tee "test_prj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+1511236	   3048	3482272	4996556	 4c3dcc	test_prj.elf
+'Finished building: test_prj.elf.size'
+' '
+11:15:49 **** Auto Build of configuration Debug for project test_prj ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/display_demo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/display_demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_prj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/display_demo.d" -MT"src/display_demo.o" -o "src/display_demo.o" "../src/display_demo.c"
+../src/display_demo.c: In function 'main':
+../src/display_demo.c:141:3: warning: implicit declaration of function 'vdma_write_init' [-Wimplicit-function-declaration]
+   vdma_write_init(XPAR_AXIVDMA_1_DEVICE_ID,800 * 3,4800,800 * 3,(unsigned int)dispCtrl.framePtr[dispCtrl.curFrame]);
+   ^~~~~~~~~~~~~~~
+'Finished building: ../src/display_demo.c'
+' '
+'Building target: test_prj.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../test_prj_bsp/ps7_cortexa9_0/lib -o "test_prj.elf"  ./src/i2c/PS_i2c.o  ./src/dynclk/dynclk.o  ./src/display_ctrl/display_ctrl.o  ./src/display_demo.o ./src/ov5640.o ./src/vdma.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_prj.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size test_prj.elf  |tee "test_prj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+1511236	   3048	3482272	4996556	 4c3dcc	test_prj.elf
+'Finished building: test_prj.elf.size'
+' '
+11:16:04 **** Auto Build of configuration Debug for project test_prj ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/display_demo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/display_demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_prj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/display_demo.d" -MT"src/display_demo.o" -o "src/display_demo.o" "../src/display_demo.c"
+../src/display_demo.c: In function 'main':
+../src/display_demo.c:141:3: warning: implicit declaration of function 'vdma_write_init' [-Wimplicit-function-declaration]
+   vdma_write_init(XPAR_AXIVDMA_1_DEVICE_ID,800 * 3,480,800 * 3,(unsigned int)dispCtrl.framePtr[dispCtrl.curFrame]);
+   ^~~~~~~~~~~~~~~
+'Finished building: ../src/display_demo.c'
+' '
+'Building target: test_prj.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../test_prj_bsp/ps7_cortexa9_0/lib -o "test_prj.elf"  ./src/i2c/PS_i2c.o  ./src/dynclk/dynclk.o  ./src/display_ctrl/display_ctrl.o  ./src/display_demo.o ./src/ov5640.o ./src/vdma.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_prj.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size test_prj.elf  |tee "test_prj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+1511236	   3048	3482272	4996556	 4c3dcc	test_prj.elf
+'Finished building: test_prj.elf.size'
+' '
+11:16:46 **** Auto Build of configuration Debug for project test_prj ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/display_demo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/display_demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_prj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/display_demo.d" -MT"src/display_demo.o" -o "src/display_demo.o" "../src/display_demo.c"
+'Finished building: ../src/display_demo.c'
+' '
+'Building target: test_prj.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../test_prj_bsp/ps7_cortexa9_0/lib -o "test_prj.elf"  ./src/i2c/PS_i2c.o  ./src/dynclk/dynclk.o  ./src/display_ctrl/display_ctrl.o  ./src/display_demo.o ./src/ov5640.o ./src/vdma.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_prj.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size test_prj.elf  |tee "test_prj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+1511236	   3048	3482272	4996556	 4c3dcc	test_prj.elf
+'Finished building: test_prj.elf.size'
+' '
+11:17:18 **** Incremental Build of configuration Debug for project test_prj ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+11:18:02 **** Incremental Build of configuration Debug for project test_prj ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.

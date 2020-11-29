@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Nov 27 09:01:27 2020
+# Process ID: 12308
+# Current directory: F:/work/zynq_work2020/Camera/ZYNQ_SINGLE_OV5640_LCD
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1448 F:\work\zynq_work2020\Camera\ZYNQ_SINGLE_OV5640_LCD\vdma_hdmi_out.xpr
+# Log file: F:/work/zynq_work2020/Camera/ZYNQ_SINGLE_OV5640_LCD/vivado.log
+# Journal file: F:/work/zynq_work2020/Camera/ZYNQ_SINGLE_OV5640_LCD\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/work/zynq_work2020/Camera/ZYNQ_SINGLE_OV5640_LCD/vdma_hdmi_out.xpr
+INFO: [Project 1-313] Project file moved from 'F:/work/zynq_work2020/OV5640/OV5640' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'F:/work/zynq_work2020/Camera/hdmi_output_test/repo', nor could it be found using path 'F:/work/zynq_work2020/OV5640/hdmi_output_test/repo'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'f:/work/zynq_work2020/Camera/hdmi_output_test/repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/work/zynq_work2020/Camera/ZYNQ_SINGLE_OV5640_LCD/repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/software/program_software/Vivado/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 822.539 ; gain = 194.551
+update_compile_order -fileset sources_1
+reset_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 27 09:03:42 2020...
